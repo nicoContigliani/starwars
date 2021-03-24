@@ -1,0 +1,25 @@
+body{
+  /* background-image: url("https://www.elsoldesanluis.com.mx/incoming/kltov2-poster-peliculas-star-wars.png/ALTERNATES/LANDSCAPE_960/Poster-pel%C3%ADculas-star-wars.png"); */
+
+  background-color: black;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%; 
+  align-items: center;
+  font-style: normal;
+  
+  
+  
+}
+h1{
+  color:goldenrod
+}
+.cabecera{
+ background-image: url("https://www.elsoldesanluis.com.mx/incoming/kltov2-poster-peliculas-star-wars.png/ALTERNATES/LANDSCAPE_960/Poster-pel%C3%ADculas-star-wars.png"); 
+
+}
+.Starwars{
+  background-color: goldenrod;
+}

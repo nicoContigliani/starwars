@@ -1,41 +1,34 @@
 import React from 'react';
 
 import './App.css';
-import {   BrowserRouter as Router,
+import {
+  BrowserRouter as Router,
   Switch,
   Route,
   Link,
   NavLink
-}from"react-router-dom";
+} from "react-router-dom";
 import { Fragment } from 'react';
-
-
-
-
-
+import Natbar from './components/Natbar'
 function App() {
   return (
 
-<Fragment>
-<div className="fixed-top">
-  <div className="collapse" id="navbarToggleExternalContent">
-    <div className="bg-dark p-4">
-      <h5 className="text-white h4">Collapsed content</h5>
-      <span className="text-muted">Toggleable via the navbar brand.</span>
-    </div>
-  </div>
-  <nav className="navbar navbar-dark bg-dark">
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-  </nav>
+    <Fragment>
+
+
+<hr/>
+
+<div className="container">
+
+      <h1>Star Wars </h1><br/>
 </div>
-
- <h1>Star Wars </h1>
-
+      <Natbar />
 
 
-</Fragment> 
+
+
+
+    </Fragment>
 
 
   );
