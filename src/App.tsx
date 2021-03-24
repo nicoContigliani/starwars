@@ -1,5 +1,13 @@
 import React from 'react';
+
 import './App.css';
+import {   BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  NavLink
+}from"react-router-dom";
+import { Fragment } from 'react';
 
 
 
@@ -7,9 +15,15 @@ import './App.css';
 
 function App() {
   return (
-    <div>hola
-      
-    </div>
+
+<Fragment>
+ <h1>Star Wars </h1>
+
+
+
+</Fragment> 
+
+
   );
 }
 
