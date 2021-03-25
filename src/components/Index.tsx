@@ -32,20 +32,12 @@ interface Personaje {
 }
 
 
-
-
-
-
-
-
-
-
 const Index = () => {
 
     const [personajes, setPersonajes] = useState<Personaje[]>([]);
     const getPersonaje = async () => {
         const res = await axios.get("https://swapi.dev/api/people/");
-        console.log(res.data.results);
+        // console.log(res.data.results);
 
         setPersonajes(res.data.results);
     }
@@ -69,14 +61,21 @@ const Index = () => {
 
                             {
 
-                                personajes.map(Personaje => (
+                                personajes.map((Personaje,index) => (
                                     <div>
-                                        <button type="button" className="btn btn-outline-dark">
-                                            <Link to="/personajeDescription" className="btn btn-dark">    <div>{Personaje.name}</div></Link>
+                                        <div key={index}>
 
-                                        </button>
 
-                                        {/* <div>{Personaje.height} {Personaje.mass} {Personaje.hair_color} {Personaje.eye_color}  {Personaje.birth_year} {Personaje.gender} </div> */}
+                                            <button type="button" className="btn btn-outline-dark">
+                                                <Link to={`/personajeDescription/${index}`} className="btn btn-dark">   
+                                                 {Personaje.name}
+                                                </Link>
+
+                                            </button>
+
+                                            {/* <div>{Personaje.height} {Personaje.mass} {Personaje.hair_color} {Personaje.eye_color}  {Personaje.birth_year} {Personaje.gender} </div> */}
+                                        </div>
+
                                     </div>
 
 
@@ -93,10 +92,10 @@ const Index = () => {
 
 
                             <Switch>
-                                <Route path="/personajeDescription">
+                                <Route path="/personajeDescription/:id">
                                     <Personajedescription />
                                 </Route>
-                       
+
 
                             </Switch>
                         </Router>
