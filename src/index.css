@@ -21,5 +21,9 @@ h1{
 
 }
 .Starwars{
-  background-color: goldenrod;
+  /* background-color: goldenrod; */
+  background: rgb(226, 226, 0);  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #fac410, #dada04);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, rgb(160, 118, 10),rgb(218, 161, 17)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }

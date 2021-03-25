@@ -21,7 +21,7 @@ const Natbar = () => {
                             <h5 className="text-white h4">Collapsed content</h5>
 
                             <Link to="/" className="btn btn-outline-warning">Inicio</Link>
-                            <Link to="Yo" className="btn btn-outline-warning">Yo</Link>
+                            <Link to="/Yo" className="btn btn-outline-warning">Yo</Link>
 
 
                         </div>
@@ -36,7 +36,7 @@ const Natbar = () => {
                     <Route path="/" exact>
                         <Index />
                     </Route>
-                    <Route path="Yo" exact>
+                    <Route path="/Yo" exact>
                         <Yo />
                     </Route>
                 </Switch>
