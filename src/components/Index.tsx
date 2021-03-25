@@ -58,11 +58,11 @@ const Index = () => {
                         <Router>
 
 
-
                             {
 
                                 personajes.map((Personaje,index) => (
                                     <div>
+
                                         <div key={index}>
 
 
